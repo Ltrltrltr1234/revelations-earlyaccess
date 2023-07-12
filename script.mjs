@@ -1,7 +1,6 @@
 //script before everything was rewritten in break infinity
 
 "use strict";
-
 // name, description, cost (catalysts), upgrade line id, prereq (0 means default-unlocked)
 
 let normalupgrades = {
