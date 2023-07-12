@@ -1139,7 +1139,7 @@ export function singularity() {
   lssi("currentichor", 0);
   lssi("assimilation", 1);
   if (lsgi("firsttimesingularity")!="1"){
-    popup("<p>You watch as your cores, still bubbling with fusing energy, are devoured by the void-black singularity. All turns to nothing in mere moments. The void shrinks into your palm, and you gaze into it, where boundless frontiers lie.</p><p>You have unlocked Singularity Research and additional upgrades, as well as one vortex and the sixth tier of fusion cores. A new tab has appeared.</p>");
+    popup("<p>You watch as your cores, still bubbling with fusing energy, are devoured by the void-black singularity. All turns to nothing in mere moments. The void shrinks into your palm, and you gaze into it, where boundless frontiers lie.</p><p>You have unlocked Singularity Research and additional upgrades, as well as one vortex and the fifth tier of fusion cores. A new tab has appeared.</p>");
   }
   lssi("firsttimesingularity", 1);
   lssi("singularities", Number(lsgi("singularities")) + 1);
