@@ -1,9 +1,6 @@
 //script before everything was rewritten in break infinity
 
 "use strict";
-import "./node_modules/break_infinity.js/dist/break_infinity.js";
-let testvar = new Decimal("1e30000");
-console.log(testvar);
 
 // name, description, cost (catalysts), upgrade line id, prereq (0 means default-unlocked)
 
