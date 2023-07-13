@@ -455,6 +455,7 @@ export function render() {
 
   //render dc machine
   if (lsgi("singularities") > 0) {
+    document.getElementById("dcmachines").style.display = "block";
     if (dcmachinerendered == 0) {
       document.getElementById("dcmachines").innerHTML += "<div id=dcmachine class=dcmachine><p><button class=dcmachinebuy id=\"dcmachinebuy\" onclick=\"buydcmachine()\"></button></p></div>";
       dcmachinerendered = 1;
