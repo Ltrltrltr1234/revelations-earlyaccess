@@ -1089,8 +1089,8 @@ export function buyfcmachine(core) {
   }
   else if (2 ** Math.floor((lsgi("fcmachineup" + core)) - Math.log(0.1 / (4 + .5 * core)) / Math.log(0.7)) < 64) {
     if (Number(lsgi("catalyst")) >= 50 * 1.5 ** (core - 1) * 1.1 ** (Number(lsgi("fcmachineup" + core)))) {
-      lssi("fcmachineup" + core, Number(lsgi("fcmachineup" + core)) + 1);
       lssi("catalyst", Number(lsgi("catalyst")) - 50 * 1.5 ** (core - 1) * 1.1 ** (Number(lsgi("fcmachineup" + core))));
+      lssi("fcmachineup" + core, Number(lsgi("fcmachineup" + core)) + 1);
     }
   }
 }
@@ -1106,8 +1106,8 @@ export function buydcmachine() {
   }
   else if (2 ** Math.floor((lsgi("dcmachineup")) - Math.log(0.01) / Math.log(0.5)) < 64) {
     if (Number(lsgi("catalyst")) >= 300000 * 1.1 ** (Number(lsgi("dcmachineup")))) {
-      lssi("dcmachineup", Number(lsgi("dcmachineup")) + 1);
       lssi("catalyst", Number(lsgi("catalyst")) - 300000 * 1.1 ** (Number(lsgi("dcmachineup"))));
+      lssi("dcmachineup", Number(lsgi("dcmachineup")) + 1);
       render();
     }
   }
