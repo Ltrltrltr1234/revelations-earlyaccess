@@ -151,6 +151,9 @@ export function computeassim(fc1s) {
   if (lsgi("singupgrade6") == 1) {
     assimmult **= 2;
   }
+  if (fc1s==0){
+    assimmult=0;
+  }
   return assimmult;
 }
 
